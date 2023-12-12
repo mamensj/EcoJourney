@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Player</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+    body{
+      text-align: center;
+      background: #EEE6FF;
+      font-family: 'VT323', monospace;
+        }
+    
+    #choices, #confirm {
+     margin-top: 20px;
+    position: relative;
+    text-align: center; /* Center the content horizontally */
+}
+
+    button {
+      background: #B6A0E7;
+      width: 280px;
+      height: 75px;
+      border-radius: 30px;
+      border: 2px solid #614B93;
+      color: black;
+      margin-bottom: 40px;
+      padding: 10px 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      cursor: pointer;
+      position:relative;
+      padding-top: 10px;
+      font-size: 18px;
+      font-family: 'VT323', monospace;
+      display: inline-block; /* Make buttons inline-block elements */
+     margin-left:auto; /* Center the buttons horizontally within the container */
+      margin-right:auto;
+    }
+    #status, #confirm {
+      margin-top: 20px;
+    }
+
+    .menu {
+      position: relative;
+    top: -5pt;
+    left: 0;
+   margin: 0px;
+  
+}
+
+.menu img {
+  width:100vw; /* Ensure the image does not exceed its container width */
+  margin: 0;
+  padding: 0;
+}
+
+#logo{
+  width: 110px;
+height:auto;
+position: absolute; /* Change position to absolute */
+top: 10px; /* Adjust top position as needed */
+right: 0px; /* Adjust right position as needed */
+}
+
+#status{
+  font-size: 22px;
+  color: #523d84;
+  padding: 20px 20px 20px;
+}
+
+#line_to_speak{
+  font-size: 28px;
+  color: #000000;
+  padding: 20px 20px 20px;
+  display: none;
+}
+
+#playerTitle{
+  color: #614B93;
+}
+
+#narrative {
+  margin-bottom: 30px;
+}
+
+#player1 img{
+  width: 200px;
+  height: auto;
+  position: relative;
+}
+
+#player2 img{
+  width: 200px;
+  height: auto;
+  position: relative;
+}
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <img src="header_img_phone.png" alt="menu">
+    <img src="eco_logo.png" alt="logo" id="logo">
+  </div>
+  
+  <h1 id="playerTitle">Connecting to the server...</h1>
+ 
+  <div id="status">Waiting to start the game...</div>
+  <p id="line_to_speak"></p>
+  <div id="narrative"></div> <!-- Container for narrative text -->
+  <div id="choices"></div> <!-- Container for choice buttons -->
+  <div id="confirm" style="display:none;"></div> <!-- Container for confirmation buttons -->
+  <div id="player1" style="display: none;">
+    <img src="player1_image.png" alt="Player 1 Image">
+  </div>
+  <div id="player2" style="display: none;">
+    <img src="player2_image.png" alt="Player 2 Image">
+  </div>
+
+  <!-- Socket.IO library -->
+  <script src="/socket.io/socket.io.js"></script>
+  <!-- Game logic script -->
+  <script src="/mobile.js"></script>
+</body>
+</html>

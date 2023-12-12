@@ -1,0 +1,201 @@
+body{
+  font-family: 'VT323', monospace;
+}
+
+.mov_back_container {
+  position: absolute;
+  /*width: 100vw;*/
+  width: calc(((7625 * 100vh) / 1187));
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.mov_background {
+  position: relative;
+  width: calc(((7625 * 100vh) / 1187));
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  float: left;
+
+  animation: moveBackground 15s linear infinite;
+}
+
+.mov_backgroundstop {
+  position: relative;
+  width: 200vh;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  float: left;
+  display: none;
+  animation:none;
+  z-index: 10;
+}
+
+.owl_background{
+  position: relative;
+  width:180vh ;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  float: left;
+  display: none;
+  animation:none;
+  z-index: 10;
+}
+
+.frog_background{
+  position: relative;
+  width:180vh ;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  float: left;
+  display: none;
+  animation:none;
+  z-index: 10;
+}
+
+.eco_background{
+  position: relative;
+  width:180vh ;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  float: left;
+  display: none;
+  animation:none;
+  z-index: 10;
+}
+
+.rabbit_background{
+  position: relative;
+  width:180vh ;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  float: left;
+  display: none;
+  animation:none;
+  z-index: 10;
+}
+
+.bunny_background{
+  position: relative;
+  width:180vh ;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  float: left;
+  display: none;
+  animation:none;
+  z-index: 10;
+}
+
+
+.glass_background{
+  position: relative;
+  width:180vh ;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  float: left;
+  display: none;
+  animation:none;
+  z-index: 10;
+}
+
+
+.pollution_background{
+  position: relative;
+  width:180vh ;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  float: left;
+  display: none;
+  animation:none;
+  z-index: 10;
+}
+
+.ending_background{
+  position: relative;
+  width:180vh ;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  float: left;
+  display: none;
+  animation:none;
+  z-index: 10;
+}
+
+
+
+@keyframes moveBackground {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -50%;
+  }
+}
+
+
+.esconderijo{
+  z-index: -10;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: inline-block;
+  text-align: center;
+} 
+
+  #logo{
+   position: relative;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+  }
+
+  #logo img{
+    width: 900px;
+    height:auto;
+    display: block;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;    
+  }
+
+
+
+#pressstart{
+  align-items: center;
+  text-align: center;
+  font-style: normal;
+  font-family: 'VT323', monospace;
+  font-size:40pt;
+  float: inline-start;
+
+}
+
+#waitingMessage{
+  position: relative;
+  text-align: center;
+  font-family: 'VT323', monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28pt;
+
+}
